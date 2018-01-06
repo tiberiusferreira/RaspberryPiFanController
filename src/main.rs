@@ -38,4 +38,3 @@ fn main() {
         sleep(Duration::from_millis(500));
     }
 }
-
