@@ -1,0 +1,11 @@
+[package]
+name = "temperature_monitor"
+version = "0.1.0"
+authors = ["Tiberio D A R Ferreira <tiberiusferreira@gmail.com>"]
+
+[dependencies]
+sysfs_gpio = "*"
+lazy_static = "*"
+log = "*"
+flexi_logger = "*"
+log-panics = "*"
