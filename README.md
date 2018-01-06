@@ -14,7 +14,9 @@ This GPIO pin is connected to a circuit which uses the 5V Raspberry pin to power
 
 ![alt text](https://github.com/tiberiusferreira/RaspberryPiFanController/blob/master/Circuit.png)
 
+The extra resistor in the photo below is not necessary and was later removed.
+
+![alt text](https://github.com/tiberiusferreira/RaspberryPiFanController/blob/master/Assembled.jpg)
+
 Make sure the program runs on startup by including it in the /etc/rc.local script.
-
-
 
