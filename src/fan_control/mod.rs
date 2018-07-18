@@ -1,4 +1,7 @@
 use sysfs_gpio::{Pin, Direction};
+use std::thread::sleep;
+use std::time::Duration;
+
 const FAN_PIN_NUMBER: u64 = 9;
 
 
@@ -10,7 +13,9 @@ impl Fan{
     pub fn new() -> Self{
         let fan_pin = Pin::new(FAN_PIN_NUMBER);
         fan_pin.export().expect(&format!("Could not export pin {} to user space.", FAN_PIN_NUMBER));
+        sleep(Duration::from_millis(2000));
         fan_pin.set_direction(Direction::Out).expect("Could not set pin {} direction to Out");
+        sleep(Duration::from_millis(2000));
         Fan{
             pin: fan_pin
         }
