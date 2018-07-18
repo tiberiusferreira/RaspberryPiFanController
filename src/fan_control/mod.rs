@@ -1,5 +1,5 @@
 use sysfs_gpio::{Pin, Direction};
-const FAN_PIN_NUMBER: u64 = 21;
+const FAN_PIN_NUMBER: u64 = 9;
 
 
 pub struct Fan{

@@ -26,6 +26,7 @@ fn main() {
     let fan = Fan::new();
     // Make sure it can turn on and off
     fan.turn_on_fan();
+    sleep(Duration::from_millis(500));
     fan.turn_off_fan();
     info!("Started!");
     loop {
