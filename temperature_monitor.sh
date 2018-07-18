@@ -18,12 +18,12 @@ case "$1" in
   start)
     echo "Starting Temperature Monitoring"
     # run application you want to start
-    sleep 35 && cd /home/pi/TemperatureMonitor && sudo -u pi env RUST_BACKTRACE=1 /home/pi/.cargo/bin/cargo +stable run &
+    sleep 35 && cd /home/pi/RaspberryPiFanController && sudo -u pi env RUST_BACKTRACE=1 /home/pi/.cargo/bin/cargo +stable run &
     ;;
   stop)
     echo "Stopping Temperature Monitoring"
     # kill application you want to stop
-    killall TemperatureMonitor
+    killall RaspberryPiFanController
     ;;
   *)
     echo "Usage: {start|stop}"
